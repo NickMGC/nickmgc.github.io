@@ -2,21 +2,38 @@
 <html>
 
     <head>
-        <link rel="icon" type="image/png" href="assets/images/icon.png">
-        <link rel="stylesheet" href="backend/site.css">
+        <link rel='icon' href='assets/images/icon.png'>
+        <link rel='stylesheet' href='backend/site.css'>
         <title>WIP</title>
     </head>
 
     <body>
-        <div class="nav-container">
-            <a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="socials.html">Socials</a> | <a href="games.html">Games</a> | Toys
+        <div class='nav-container'>
+            <a href='index.html'>Home</a> | <a href='projects.html'>Projects</a> | <a href='socials.html'>Socials</a> | <a href='games.html'>Games</a> | Toys
         </div>
 
-        <div class="homepage">
-            <div style="text-align: center;">
-                <h1>WIP</h1>
+        <div class='page'>
+            <div class='grid' style='text-align: center; margin: 30px;'>
+                <div style='margin: 10px;'>
+                    <img src='assets/images/logo.png' onclick="window.location.href = 'toys/coinFlip.html'"> <div>Coin flip</div>
+                </div>
+                <div style='margin: 10px;'>
+                    <img src='assets/images/logo.png' onclick="showComingSoon('Dice D4')"> <div>Dice D4</div>
+                </div>
+                <div style='margin: 10px;'>
+                    <img src='assets/images/logo.png' onclick="showComingSoon('Dice D6')"> <div>Dice D6</div>
+                </div>
+                <div style='margin: 10px;'>
+                    <img src='assets/images/logo.png' onclick="showComingSoon('Dice D20')"> <div>Dice D20</div>
+                </div>
             </div>
         </div>
     </body>
+
+    <script>
+        function showComingSoon(toyName) {
+            alert(`${toyName} is coming soon`);
+        }
+    </script>
 
 </html>

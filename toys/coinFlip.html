@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <base href='../'>
+        <link rel='icon' href='assets/images/icon.png'>
+        <link rel='stylesheet' href='backend/site.css'>
+        <title>привет</title>
+    </head>
+
+    <body>
+        <div class='nav-container'>
+            <a href='index.html'>Home</a> | <a href='projects.html'>Projects</a> | <a href='socials.html'>Socials</a> | <a href='games.html'>Games</a> | <a href='toys.html'>Toys</a>
+        </div>
+
+        <div class='homepage'>
+            <div style='text-align: center; margin: 30px;' id='coin'>
+                <p id='thing'>heads</p>
+                <div><img style='margin-bottom: 30px;' src='https://media.geeksforgeeks.org/wp-content/uploads/20231016151817/heads.png' alt='Heads'/></div>
+                <button onclick='flipCoin()'>Flip a coin</button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function flipCoin() {
+            const coinFace = Math.random() >= 0.5 ? 'Heads' : 'Tails';
+            const coinImage = coinFace === 'Heads' ? '20231016151817/heads.png' : '20231016151806/tails.png'; /*will draw le coins myself when i wont be lazy*/
+
+            document.getElementById('coin').innerHTML = `
+                <p id='thing'>${coinFace}</p>
+                <div><img style='margin-bottom: 30px;' src='https://media.geeksforgeeks.org/wp-content/uploads/${coinImage}' alt='${coinFace}'></div>
+                <button onclick='flipCoin()'>Flip a coin</button>
+            `;
+        }
+    </script>
+
+</html> 
