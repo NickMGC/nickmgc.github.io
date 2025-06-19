@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <link rel="icon" type="image/png" href="assets/images/icon.png">
         <link rel="stylesheet" href="backend/site.css">
@@ -8,34 +7,40 @@
     </head>
 
     <body>
-
         <script>
             var typed_word = '';
-
             document.addEventListener('keypress', onKeyPress)
-
             function onKeyPress(event) {
                 typed_word = typed_word + event.key;
-                if (typed_word === 'lime') window.location.href = 'lime';
+                if (typed_word === 'lime') window.location.href = 'lime.html';
             }
         </script>
 
-        <div style="text-align: center;">
-            Home | <a href="artwork">Artwork</a> | <a href="projects">Projects</a> | <a href="socials">Socials</a> | <a href="games">Games</a> | <a href="toys">Toys</a>
+        <div class="nav-container">
+            Home | <a href="artwork.html">Artwork</a> | <a href="projects.html">Projects</a> | 
+            <a href="socials.html">Socials</a> | <a href="games.html">Games</a> | <a href="toys.html">Toys</a>
         </div>
 
-        <div style="border-bottom: 2px solid #ffffff; margin-top: 10px; margin-bottom: 10px;"></div>
-
         <div class="homepage">
-            <div style="margin-left: 20px;">
-                <h1>Welcome to my website!</h1>
-                <div style="margin-top: 40px;">
-                    <p>This website is a heavy WIP, it won't work with mobile for now</p>
+            <div style="margin: 30px; margin-top: 30px;">
+
+                <div style="display: flex;">
+                    <h1>Welcome to my website!</h1>
+                    <img style="margin-left: 260px;" src="assets/images/homenick.gif">
                 </div>
 
-                <img src="assets/images/logo.png">
+                <div style="margin-top: -450px;">
+                    <p>This website is a heavy WIP, it won't work with mobile for now.</p>
+                    <p>My main hobbies are Art, Animation and Programming.</p>
+                    <p>I'll be updating this site and adding other stuff down the line.</p>
+                </div>
+
+                <img
+                    style="margin-top: 110px;"
+                    onclick="window.location.href = 'boyfriendShrine.html'"
+                    src="assets/images/logo.png"
+                >
             </div>
         </div>
     </body>
-
 </html>

@@ -7,10 +7,27 @@ body {
 
 .homepage {
     background-color: #5f4534;
-    max-width: 1000px;
+    max-width: 1150px;
     padding: 20px;
     border: 10px solid #fff6d8;
     margin: auto;
+}
+
+.nav-container {
+    text-align: center;
+    padding: 15px;
+    background: #5f4534;
+    border-bottom: 5px solid #fff6d8;
+    margin-bottom: 20px;
+}
+    
+.nav-container a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+    
+.nav-container a:hover {
+    text-decoration: underline;
 }
 
 p {
