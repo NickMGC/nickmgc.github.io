@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <script src='../backend/head.js' title='Dice 4'></script>
+    <script src='../backend/navContainer.js'></script>
+
+    <body>
+        <div class='homepage'>
+            <div style='text-align: center; margin: 30px;' id='coin'>
+                <img src='assets/images/logo.png' style="margin-bottom: 40px;">
+                <p id="num">technically you should never see this text but if you do something has went terribly wrong, try turning on javascript idk?</p>
+                <button onclick="document.getElementById('num').innerHTML = getRndInteger(1, 5)">Click Me</button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        document.getElementById('num').innerHTML = getRndInteger(1, 5);
+    </script>
+
+</html> 

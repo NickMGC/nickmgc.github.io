@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'spaceGrotesk';
+    src: url('../assets/fonts/spaceGrotesk.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'spaceGrotesk';
     background: #e1c89b;
     color: #ffffff;
     font-size: 20px;
@@ -29,6 +36,12 @@ body {
     text-align: center;
     border: 5px solid #fff6d8;
     margin-bottom: 20px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
     
 .nav-container a {
@@ -48,6 +61,7 @@ body {
 
 p {
     margin-top: -20px;
+    font-size: 18px;
 }
 
 h1 {

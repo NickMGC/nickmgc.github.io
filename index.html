@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <link rel='icon' href='assets/images/icon.png'>
-        <link rel='stylesheet' href='backend/site.css'>
-        <title>Nick's page</title>
-    </head>
+    <script src='backend/head.js' title="Nick's Page"></script>
+    <script src='backend/navContainer.js'></script>
+    <script src='backend/textWriter.js'></script>
 
     <body>
-        <div class='nav-container'>
-            Home | <a href='projects.html'>Projects</a> | <a href='socials.html'>Socials</a> | <a href='games.html'>Games</a> | <a href='toys.html'>Toys</a>
-        </div>
-
         <div class='homepage'>
             <div style='margin: 30px;'>
 
                 <div style='display: flex;'>
                     <h1>Welcome to my website!</h1>
-                    <img style='margin-left: 260px;' src='assets/images/homenick.gif'>
+                    <img draggable='false' style='margin-left: 260px;' src='assets/images/homenick.gif'>
                 </div>
 
                 <div style='margin-top: -450px;'>
                     <p>This website is a heavy WIP, it won't work properly when rescaling the window.</p>
-                    <p>My main hobbies are Art, Animation and Programming.</p>
+                    <p>I do programming from time to time.</p>
                     <p>I'll be updating this site and adding other stuff down the line.</p>
                 </div>
 
                 <img
-                    style='margin-top: 110px;'
+                    draggable='false' style='margin-top: 110px;'
                     onclick="window.location.href = 'boyfriendShrine.html'"
                     src='assets/images/logo.png'
                 >
             </div>
         </div>
     </body>
-
-    <script>
-        var typedWord = '';
-        document.addEventListener('keypress', onKeyPress)
-        function onKeyPress(event) {
-            typedWord = typedWord + event.key;
-            if (typedWord === 'lime') window.location.href = 'lime.html';
-        }
-    </script>
 
 </html>
